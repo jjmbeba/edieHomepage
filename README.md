@@ -73,5 +73,5 @@ $ git clone https://github.com/jjmbeba/edieHomepage.git
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@jjmbeba](https://{github.com/jjmbeba})
+- Website [your-website.com](https://grand-biscotti-205b24.netlify.app/#home)
+- GitHub [@jjmbeba](https://{github.com/jjmbeba)
