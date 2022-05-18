@@ -481,10 +481,13 @@ body{
             margin: 0;
         }
     }
-
-
-
     .odd{
         align-self: flex-end;
+    }
+}
+
+@media screen and (max-width:991px){
+    .nav__list{
+        display: none;
     }
 }

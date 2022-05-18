@@ -480,6 +480,11 @@ body {
     align-self: flex-end;
   }
 }
+@media screen and (max-width: 991px) {
+  .nav__list {
+    display: none;
+  }
+}
 * {
   font-family: "Poppins";
 }
