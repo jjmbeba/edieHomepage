@@ -1,0 +1,486 @@
+@import 'functions';
+@import 'colors';
+
+//Reset sizings and set border box
+*,*::after,*::before{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    padding-inline:rem(13.5);
+    padding-top: rem(19);
+    padding-bottom: rem(195);
+    position: relative;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40vw;
+    }
+    
+    &__link{
+        text-decoration: none;
+    }
+}
+
+.detail{
+    padding-top: rem(48);
+    &__title{
+        padding-top: rem(7);
+    }
+
+    &__img{
+        max-width: 100%;
+        height: rem(145);
+        padding-top: rem(20);
+
+        img{
+            border-radius: rem(18);
+        }
+    }
+
+    &__stitle{
+        padding-top: rem(22);
+    }
+
+    &__text{
+        padding-top: rem(33);
+    }
+
+    &__form{
+        padding-top: rem(31);
+
+        &__input{
+            margin-top: rem(7);
+            max-width: rem(291);
+            height: rem(54);
+            border-radius: rem(12);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            input{
+                height: 60%;
+                width: 70%;
+                border: none;
+                padding-left: rem(19);
+            }
+
+            button{
+                padding-top: 0;
+                width:rem(71);
+                height: rem(39);
+                border-radius: rem(12);
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.services{
+    &__title{
+        padding-top: rem(102);
+    }
+
+    &__container{
+        margin-top: rem(42);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: rem(40);
+    }
+
+    &__item{
+        max-width: rem(341);
+        padding: rem(45) rem(34);
+        border-radius: rem(24);
+
+        &__img{
+            max-width: rem(67);
+            height: rem(67);
+            border-radius: rem(16);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: rem(27);
+                height: rem(27);
+            }
+        }
+
+        &__title{
+            margin-top: rem(35);
+        }
+
+        &__text{
+            margin-top: rem(24);
+        }
+
+        &__button{
+            margin-top: rem(30);
+            width: rem(116);
+            height: rem(42);
+            border: none;
+            border-radius: rem(12);
+        }
+    }
+    &__item:hover{
+        box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+        cursor: pointer;
+    }
+}
+
+.design{
+    &__text{
+        margin-top: rem(100);
+    }
+
+    &__container{
+        margin-top: rem(48);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: rem(36);
+    }
+
+    &__img{
+        height: rem(362.17);
+
+        img{
+            border-radius: rem(24);
+        }
+    }
+
+    &__des{
+        margin-top: rem(12);
+    }
+
+    &__link{
+        margin-top: rem(40);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: rem(12);
+        
+        a{
+            text-decoration: none;
+        }
+    }
+
+}
+
+.team{
+    &__sub{
+      margin-top: rem(100);  
+    }
+
+    &__title{
+        margin-top: rem(7);
+    }
+
+    &__text{
+        margin-top: rem(19);
+    }
+
+    &__container{
+        margin-top: rem(36);
+        display: grid;
+        width: rem(300);
+        height: rem(300);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 75px);
+
+        img{
+            max-width: rem(144.76);
+            height: rem(144.76);
+            border-radius: rem(24);
+        }
+    }
+
+    &__review{
+        margin-top: rem(100);
+    }
+
+    &__profile{
+        margin-top: rem(27);
+        display: flex;
+        align-items: center;
+        gap: rem(30);
+
+        &__detail{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__img{
+            max-width: rem(82);
+            height: rem(82);
+            img{
+                border-radius: rem(12);
+            }
+        }
+    }
+    
+    margin-bottom: rem(500);
+}
+
+.footer{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: rem(103);
+
+    &__menu{
+        margin-top: rem(36);
+        margin-left: rem(41);
+        li{
+            text-decoration: none;
+            list-style: none;
+
+            a{
+                text-decoration:none;
+            }
+        }
+    }
+
+    h2{
+        margin-top: rem(64);
+        margin-left: rem(41);
+    }
+
+    &__socials{
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        margin-left: rem(41);
+        margin-top: rem(8);
+        gap: rem(7);
+
+        &__item{
+            max-width: rem(24);
+            height: rem(24);
+        }
+    }
+
+    form{
+        margin-bottom: rem(195);
+    }
+}
+
+#item1{
+    grid-row: span 2;
+    grid-column: 2 / 3;
+
+}
+
+#item2{
+    grid-row: span 2;
+    grid-column: 2 / 3;
+}
+
+#item3{
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+}
+
+.img{
+    width: 100%;
+    height:100%;
+}
+
+.text{
+    padding-inline-start: rem(36.5);
+}
+
+@media screen and (min-width:992px){
+    .menu{
+        display: none;
+    }
+
+    body{
+        padding-inline: rem(52);
+        padding-top: rem(42);
+    }
+
+    .text-dp{
+        padding-inline-start: rem(189);
+    }
+
+    .texts-dp{
+        margin-inline: rem(113);
+    }
+
+    .detail{
+        padding-top: rem(96);
+
+        &__title{
+            padding-top: rem(16);
+        }
+
+        &__img{
+            padding-top: rem(42);
+            height: rem(354);
+        }
+
+        &__stitle{
+            padding-top: rem(42);
+        }
+
+        &__text{
+            padding-top: rem(42);
+        }
+
+        &__form{
+            padding-top: rem(42);
+
+            &__input{
+                margin-top: rem(9);
+                max-width: rem(350);
+                height: rem(37);
+                padding: 0;
+
+                input{
+                    padding-left: rem(21);
+                }
+
+                button{
+                    margin-left: rem(20);
+                }
+            }
+        }
+    }
+
+    .services{
+        &__title{
+            padding-top: rem(200);
+        }
+
+        &__container{
+            flex-direction: row;
+            gap: rem(41);
+        }
+    }
+
+    .design{
+        position: relative;
+        &__text{
+            margin-top: rem(194);
+        }
+
+        &__container{
+            margin-top: rem(12);
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2,740px);
+            justify-content: center;
+            align-items: flex-start;
+            gap: rem(20);
+        }
+
+        &__img{
+            height:rem(543.02);
+        }
+
+        &__link{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    .team{
+        margin-top: rem(241);
+
+        &__ocontainer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__sub{
+            margin-top: rem(120);
+        }
+
+        &__text{
+            margin-top: rem(14);
+        }
+
+        &__container{
+            width: rem(544);
+            height: rem(544);
+            grid-template-rows: repeat(4, 1fr);
+
+            img{
+                max-width: rem(260);
+                height: rem(260);
+                border-radius: rem(24);
+            }
+        }
+
+        &__review{
+            margin-top: rem(196);
+        }
+
+        &__profile{
+            margin-top: rem(45);
+        }
+
+        margin-bottom: rem(585);
+    }
+
+    .footer{
+        &__container{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            margin-top: rem(46);
+
+            &__item{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                h2{
+                    margin: 0;
+                }
+
+                form{
+                    margin:0;
+                    padding: 0;
+                }
+            }
+        }
+
+        &__menu{
+            margin: 0;
+            padding-bottom: rem(159);
+        }
+
+        &__socials{
+            margin: 0;
+        }
+    }
+
+
+
+    .odd{
+        align-self: flex-end;
+    }
+}

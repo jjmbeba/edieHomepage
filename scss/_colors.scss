@@ -1,0 +1,112 @@
+$blue:#2D9CDB;
+$btnGray:#E0E0E0;
+$txtGray:#828282;
+$txtGray2:#4F4F4F;
+$iptGray:#F2F2F2;
+$txtRed:#EB5757;
+$bgFooter:#100E1D;
+$green:#27AE60;
+
+
+.detail{
+    &__question{
+        color:$blue;
+    }
+
+    &__form{
+        &__label{
+            color:$txtGray;
+        }
+
+        &__input{
+            background-color: $iptGray;
+
+            input{
+                background-color: inherit;
+            }
+
+            button{
+                color: white;
+                background-color: $blue;
+            }
+        }
+    }
+}
+
+.services{
+    &__item{
+        &__button{
+            color: $txtGray;
+            background-color: $btnGray;
+        }
+    }
+    &__item:hover{
+        button{
+            color: white;
+            background-color: $blue;
+        }
+    }
+}
+
+.design{
+    &__des{
+        color: $txtGray;
+    }
+
+    &__link{
+        a{
+            color: $blue;
+        }
+    }
+}
+
+.team{
+    &__sub{
+        color: $txtRed;
+    }
+
+    &__text{
+        color: $txtGray2;
+    }
+
+
+    &__profile{
+        &__role{
+            color: $txtGray2;
+        }
+    }
+}
+
+.footer{
+    background-color: $bgFooter;
+
+    &__menu{
+        &__link{
+            color: white;
+        }
+    }
+
+    h2{
+        color: white;
+    }
+}
+
+.nav{
+
+    &__link{
+        color: black;
+    }
+}
+
+#design{
+    background-color:$blue;
+}
+
+#front{
+    background-color: $green;
+}
+
+#back{
+    background-color: $txtRed;
+}
+
